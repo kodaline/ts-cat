@@ -42,11 +42,11 @@ dependencies:
     specifier: ^0.0.10
     version: 0.0.10
   '@langchain/community':
-    specifier: ^0.2.2
-    version: 0.2.2(@qdrant/js-client-rest@1.9.0)(cheerio@1.0.0-rc.12)(d3-dsv@2.0.0)(html-to-text@9.0.5)(lodash@4.17.21)(mammoth@1.7.2)(officeparser@4.1.1)(pdf-parse@1.1.1)
+    specifier: ^0.2.3
+    version: 0.2.3(@qdrant/js-client-rest@1.9.0)(cheerio@1.0.0-rc.12)(d3-dsv@2.0.0)(html-to-text@9.0.5)(lodash@4.17.21)(mammoth@1.7.2)(officeparser@4.1.1)(pdf-parse@1.1.1)
   '@langchain/core':
-    specifier: ^0.2.0
-    version: 0.2.0
+    specifier: ^0.2.1
+    version: 0.2.1
   '@langchain/google-genai':
     specifier: ^0.0.16
     version: 0.0.16(zod@3.23.8)
@@ -203,8 +203,8 @@ devDependencies:
     specifier: ^0.3.4
     version: 0.3.4
   nodemon:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.1.1
+    version: 3.1.1
   tsup:
     specifier: ^8.0.2
     version: 8.0.2(typescript@5.4.5)
@@ -1249,7 +1249,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       '@anthropic-ai/sdk': 0.21.0
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       fast-xml-parser: 4.3.5
       zod: 3.23.8
       zod-to-json-schema: 3.23.0(zod@3.23.8)
@@ -1263,7 +1263,7 @@ packages:
     dependencies:
       '@azure/core-auth': 1.6.0
       '@azure/openai': 1.0.0-beta.11
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       js-tiktoken: 1.0.12
       zod: 3.23.8
       zod-to-json-schema: 3.20.3(zod@3.23.8)
@@ -1275,18 +1275,18 @@ packages:
     resolution: {integrity: sha512-qGeYeDKu6Itago3uSmVPjYD7BjHnA5miCYT3v4oRTXz2mDON4IrQit6Uk5dERLSrMKOrHCnRE9LYJEAyvo0s0Q==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       cohere-ai: 7.9.5
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /@langchain/community@0.2.2(@qdrant/js-client-rest@1.9.0)(cheerio@1.0.0-rc.12)(d3-dsv@2.0.0)(html-to-text@9.0.5)(lodash@4.17.21)(mammoth@1.7.2)(officeparser@4.1.1)(pdf-parse@1.1.1):
-    resolution: {integrity: sha512-TtlZnPBYt7Sujc1hAYvdZKUmV97wuF15O7b4nBX4lBfQeW38N0DwGbhqpitDbpaJqZ2s8DM4rjapECk0kIdAww==}
+  /@langchain/community@0.2.3(@qdrant/js-client-rest@1.9.0)(cheerio@1.0.0-rc.12)(d3-dsv@2.0.0)(html-to-text@9.0.5)(lodash@4.17.21)(mammoth@1.7.2)(officeparser@4.1.1)(pdf-parse@1.1.1):
+    resolution: {integrity: sha512-8ynw+ck4mfd7v4oYV1MP9rau2dLfdubTSN3e/1AhrKstICejOT2iYv3+Y4J9H/niwWBd5VqUmJUhTmYUZK3WBg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-crypto/sha256-js': ^5.0.0
-      '@aws-sdk/client-bedrock-agent-runtime': ^3.485.0
+      '@aws-sdk/client-bedrock-agent-runtime': ^3.583.0
       '@aws-sdk/client-bedrock-runtime': ^3.422.0
       '@aws-sdk/client-dynamodb': ^3.310.0
       '@aws-sdk/client-kendra': ^3.352.0
@@ -1303,10 +1303,11 @@ packages:
       '@datastax/astra-db-ts': ^1.0.0
       '@elastic/elasticsearch': ^8.4.0
       '@getmetal/metal-sdk': '*'
+      '@getzep/zep-cloud': ~1.0.0
       '@getzep/zep-js': ^0.9.0
       '@gomomento/sdk': ^1.51.1
       '@gomomento/sdk-core': ^1.51.1
-      '@google-ai/generativelanguage': ^0.2.1
+      '@google-ai/generativelanguage': ^2.5.0
       '@google-cloud/storage': ^6.10.1 || ^7.7.0
       '@gradientai/nodejs-sdk': ^1.2.0
       '@huggingface/inference': ^2.6.4
@@ -1333,6 +1334,7 @@ packages:
       '@tensorflow-models/universal-sentence-encoder': '*'
       '@tensorflow/tfjs-converter': '*'
       '@tensorflow/tfjs-core': '*'
+      '@upstash/ratelimit': ^1.1.3
       '@upstash/redis': ^1.20.6
       '@upstash/vector': ^1.0.7
       '@vercel/kv': ^0.2.3
@@ -1361,7 +1363,7 @@ packages:
       epub2: ^3.0.1
       faiss-node: ^0.5.1
       firebase-admin: ^11.9.0 || ^12.0.0
-      google-auth-library: ^8.9.0
+      google-auth-library: ^9.10.0
       googleapis: ^126.0.1
       hnswlib-node: ^3.0.0
       html-to-text: ^9.0.5
@@ -1389,7 +1391,7 @@ packages:
       portkey-ai: ^0.1.11
       puppeteer: ^19.7.2
       redis: '*'
-      replicate: ^0.18.0
+      replicate: ^0.29.4
       sonix-speech-recognition: ^2.1.1
       srt-parser-2: ^1.2.3
       typeorm: ^0.3.12
@@ -1438,6 +1440,8 @@ packages:
       '@elastic/elasticsearch':
         optional: true
       '@getmetal/metal-sdk':
+        optional: true
+      '@getzep/zep-cloud':
         optional: true
       '@getzep/zep-js':
         optional: true
@@ -1498,6 +1502,8 @@ packages:
       '@tensorflow/tfjs-converter':
         optional: true
       '@tensorflow/tfjs-core':
+        optional: true
+      '@upstash/ratelimit':
         optional: true
       '@upstash/redis':
         optional: true
@@ -1638,7 +1644,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       '@langchain/openai': 0.0.33
       '@qdrant/js-client-rest': 1.9.0(typescript@5.4.5)
       binary-extensions: 2.2.0
@@ -1685,8 +1691,8 @@ packages:
       zod-to-json-schema: 3.23.0(zod@3.23.8)
     dev: false
 
-  /@langchain/core@0.2.0:
-    resolution: {integrity: sha512-UbCJUp9eh2JXd9AW/vhPbTgtZoMgTqJgSan5Wf/EP27X8JM65lWdCOpJW+gHyBXvabbyrZz3/EGaptTUL5gutw==}
+  /@langchain/core@0.2.1:
+    resolution: {integrity: sha512-VRgdV8aaKfhjC446fqsvDriTe0VPIHW+bl8cTefRwGKRuW9Tynw6FvS+69UOywp3Ix9u7GBvCIATBrdhmFAQHA==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
@@ -1708,7 +1714,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       '@google/generative-ai': 0.7.1
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       zod-to-json-schema: 3.23.0(zod@3.23.8)
     transitivePeerDependencies:
       - zod
@@ -1718,7 +1724,7 @@ packages:
     resolution: {integrity: sha512-cZ+HBz32Gq2zjkXcDs5hDnr8W0QxlRXhWAXu9zepwzLNe3aXxAD/lhz9l654o2fo89bqnuhtYgbGx8ZVYcDvCw==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       '@mistralai/mistralai': 0.1.3
       uuid: 9.0.1
       zod: 3.23.8
@@ -1731,7 +1737,7 @@ packages:
     resolution: {integrity: sha512-hTBo9y9bHtFvMT5ySBW7TrmKhLSA91iNahigeqAFBVrLmBDz+6rzzLFc1mpq6JEAR3fZKdaUXqso3nB23jIpTw==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       js-tiktoken: 1.0.12
       openai: 4.47.1
       zod: 3.23.8
@@ -5380,7 +5386,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.0
+      '@langchain/core': 0.2.1
       '@langchain/openai': 0.0.33
       '@langchain/textsplitters': 0.0.0
       binary-extensions: 2.2.0
@@ -5845,8 +5851,8 @@ packages:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
 
-  /nodemon@3.1.0:
-    resolution: {integrity: sha512-xqlktYlDMCepBJd43ZQhjWwMw2obW/JRvkrLxq5RCNcuDDX1DbcPT+qT1IlIIdf+DhnWs90JpTMe+Y5KxOchvA==}
+  /nodemon@3.1.1:
+    resolution: {integrity: sha512-k43xGaDtaDIcufn0Fc6fTtsdKSkV/hQzoQFigNH//GaKta28yoKVYXCnV+KXRqfT/YzsFaQU9VdeEG+HEyxr6A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5855,7 +5861,7 @@ packages:
       ignore-by-default: 1.0.1
       minimatch: 3.1.2
       pstree.remy: 1.1.8
-      semver: 7.5.4
+      semver: 7.6.2
       simple-update-notifier: 2.0.0
       supports-color: 5.5.0
       touch: 3.1.0
@@ -6818,6 +6824,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
 
   /semver@7.6.0:
     resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
@@ -6899,7 +6906,7 @@ packages:
     resolution: {integrity: sha512-a2B9Y0KlNXl9u/vsW6sTIu9vGEpfKu2wRV6l1H3XEas/0gUIzGzBoP/IouTcUQbm9JWZLH3COxyn03TYlFax6w==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.5.4
+      semver: 7.6.2
     dev: true
 
   /simple-wcswidth@1.0.1:
